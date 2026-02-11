@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Protección de Datos Personales</title>
+
+<style type="text/css">
+body {
+    background-color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    color: #0099CC;
+}
+
+table {
+    margin: auto;
+}
+
+.menu {
+    background-color: #000000;
+}
+
+.contenedor {
+    width: 850px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0099CC;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.foro {
+    margin-top: 40px;
+    border: 1px solid #0099CC;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #000000;
+    color: #0099CC;
+    border: 1px solid #0099CC;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0099CC;
+    color: #000000;
+}
+</style>
+
+<script type="text/javascript">
+function FP_swapImg() {
+ var doc=document,args=arguments,elm;
+ for(var n=2; n<args.length; n+=2) {
+   elm=document.getElementById(args[n]);
+   if(elm){ elm.src=args[n+1]; }
+ }
+}
+</script>
+</head>
+
+<body>
+
+<table width="1100">
+
+<!-- ===== IMAGEN SUPERIOR ===== -->
+<tr>
+<td colspan="2" align="center">
+<img src="img14.jpg" width="1150" height="200" alt="Encabezado" />
+</td>
+</tr>
+
+<tr>
+
+<!-- ===== MENÚ LATERAL ===== -->
+<td width="180" valign="top" class="menu">
+<table cellspacing="6">
+
+<tr><td>
+<a href="pagina 3.htm">
+<img id="img1" src="button31.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img1','button32.jpg')"
+onmouseout="FP_swapImg(0,0,'img1','button31.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 2.htm">
+<img id="img2" src="button34.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img2','button35.jpg')"
+onmouseout="FP_swapImg(0,0,'img2','button34.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 4.htm">
+<img id="img3" src="button37.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img3','button38.jpg')"
+onmouseout="FP_swapImg(0,0,'img3','button37.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 7.htm">
+<img id="img4" src="button4C.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img4','button4D.jpg')"
+onmouseout="FP_swapImg(0,0,'img4','button4C.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 6.htm">
+<img id="img5" src="button55.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img5','button56.jpg')"
+onmouseout="FP_swapImg(0,0,'img5','button55.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 5.htm">
+<img id="img6" src="button58.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img6','button59.jpg')"
+onmouseout="FP_swapImg(0,0,'img6','button58.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 8.htm">
+<img id="img7" src="button5B.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img7','button5C.jpg')"
+onmouseout="FP_swapImg(0,0,'img7','button5B.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="pagina 9.htm">
+<img id="img8" src="button5E.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img8','button5F.jpg')"
+onmouseout="FP_swapImg(0,0,'img8','button5E.jpg')" />
+</a>
+</td></tr>
+
+<tr><td>
+<a href="menu desplegable.htm">
+<img id="img9" src="button3F.jpg" width="150" height="35"
+onmouseover="FP_swapImg(1,0,'img9','button78.jpg')"
+onmouseout="FP_swapImg(0,0,'img9','button3F.jpg')" />
+</a>
+</td></tr>
+
+</table>
+</td>
+
+<!-- ===== CONTENIDO PRINCIPAL + FORO ===== -->
+<td valign="top">
+<div class="contenedor">
+
+<h1>PROTECCIÓN Y DATOS PERSONALES</h1>
+
+<p>
+La protección de los datos personales es fundamental para garantizar
+la privacidad y seguridad de la información en internet.
+</p>
+
+<div class="foro">
+<h2>Foro de Opiniones</h2>
+
+<form action="mailto:al.samuel.prietorua@vbl.fundacioneducere.es"
+method="post" enctype="text/plain">
+
+<label>Nombre:</label>
+<input type="text" name="Nombre" required />
+
+<label>Correo electrónico:</label>
+<input type="email" name="Correo" required />
+
+<label>Mensaje:</label>
+<textarea name="Mensaje" rows="6" required></textarea>
+
+<center>
+<input type="submit" value="Enviar mensaje" />
+</center>
+
+</form>
+</div>
+
+<p style="text-align:center; margin-top:40px;">
+<strong>S.P</strong>
+</p>
+
+</div>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sin título 1</title>
+
+<style type="text/css">
+.style1 { margin-left: 0px; }
+.style3 { border-color: #99CCFF; border-width: 0; }
+.style4 { font-size: large; text-align: left; }
+.style5 { text-align: center; }
+.style17 { text-align: left; }
+.style20 { border-style: solid; border-color: #000000; background-color: #000000; }
+.style24 { text-align: justify; }
+
+/* ===== FECHA Y VISITAS (ESPACIO FIJO) ===== */
+#infoInferior {
+	width: 320px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#contadorVisitas, #fechaHora {
+	color: #0099CC;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.style7 {
+	border: 1px solid #000000;
+	background-color: #000000;
+}
+.style7 {
+	border: 1px solid #000000;
+	background-color: #000000;
+}
+.style18 {
+	border-style: solid;
+	border-color: #000000;
+	text-align: center;
+	background-color: #000000;
+}
+.style18 {
+	border-style: solid;
+	border-color: #000000;
+	text-align: center;
+	background-color: #000000;
+}
+.style21 {
+	border-style: solid;
+	border-color: #000000;
+	text-align: center;
+}
+.style21 {
+	border-style: solid;
+	border-color: #000000;
+	text-align: center;
+}
+.style29 {
+	text-align: center;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+}
+</style>
+
+<script type="text/javascript">
+function FP_preloadImgs() {
+ var d=document,a=arguments;
+ if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0;i<a.length;i++){
+  d.FP_imgs[i]=new Image;
+  d.FP_imgs[i].src=a[i];
+ }
+}
+
+/* ===== CONTADOR ===== */
+function contarVisitas() {
+ var visitas = localStorage.getItem("visitas");
+ if (visitas === null) {
+  visitas = 1;
+ } else {
+  visitas = parseInt(visitas) + 1;
+ }
+ localStorage.setItem("visitas", visitas);
+ document.getElementById("contadorVisitas").innerHTML = "Visitas: " + visitas;
+}
+
+/* ===== FECHA Y HORA ===== */
+function actualizarFechaHora() {
+ var ahora = new Date();
+ var dia = ("0" + ahora.getDate()).slice(-2);
+ var mes = ("0" + (ahora.getMonth()+1)).slice(-2);
+ var anio = ahora.getFullYear();
+ var hora = ("0" + ahora.getHours()).slice(-2);
+ var min = ("0" + ahora.getMinutes()).slice(-2);
+ var seg = ("0" + ahora.getSeconds()).slice(-2);
+
+ document.getElementById("fechaHora").innerHTML =
+  dia + "/" + mes + "/" + anio + " " + hora + ":" + min + ":" + seg;
+}
+
+setInterval(actualizarFechaHora, 1000);
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button1C2.jpg',/*url*/'button1D2.jpg',/*url*/'button1F1.jpg',/*url*/'button158.jpg',/*url*/'button159.jpg',/*url*/'button160.jpg',/*url*/'button161.jpg',/*url*/'button162.jpg',/*url*/'button163.jpg',/*url*/'button164.jpg',/*url*/'button2B2.jpg',/*url*/'button2C1.jpg',/*url*/'button2E4.jpg',/*url*/'button2F4.jpg',/*url*/'button165.jpg',/*url*/'button166.jpg',/*url*/'button167.jpg',/*url*/'button168.jpg',/*url*/'button33.jpg',/*url*/'button32.jpg',/*url*/'button36.jpg',/*url*/'button35.jpg',/*url*/'button38.jpg',/*url*/'button3A3.jpg',/*url*/'button3B3.jpg');
+contarVisitas(); actualizarFechaHora()"
+style="background-color:#000000">
+
+<table style="width:1200px;height:800px;" class="style3" align="center">
+
+<tr>
+<td colspan="2" class="style17" valign="top" style="height: 193px">
+<img src="img14.jpg" class="style1" width="1150" height="200" align="top" />
+</td>
+</tr>
+
+<tr>
+<td class="style20" valign="top" style="width:146px;">
+<!-- AQUÍ VA TU MENÚ ORIGINAL COMPLETO (SIN CAMBIOS) -->
+		<table style="width: 180px; height: 185px;" cellspacing="4" class="style7">
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%203.htm">
+				<img style="border: 0" id="img1" src="button1B1.jpg" height="35" width="150" alt="Definición" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button1C2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button1B1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button1D2.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button1C2.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Definición" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%202.htm">
+				<img style="border: 0" id="img2" src="button1E2.jpg" height="35" width="150" alt="Historia" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button1F1.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button1E2.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button158.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button1F1.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Historia" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%204.htm">
+				<img style="border: 0" id="img3" src="button169.jpg" height="35" width="150" alt="Funcionalidades de internet" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button159.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button169.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button160.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button159.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-justify-horiz: 0; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Funcionalidades de internet" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%207.htm">
+				<img style="border: 0" id="img4" src="button170.jpg" height="35" width="150" alt="Tipos de conexión" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button161.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button170.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button162.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button161.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Tipos de conexión" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%206.htm">
+				<img style="border: 0" id="img5" src="button171.jpg" height="35" width="150" alt="Protocolos" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button163.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button171.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button164.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button163.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Protocolos" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%205.htm">
+				<img style="border: 0" id="img6" src="button2A2.jpg" height="35" width="150" alt="Páginas web" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button2B2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button2A2.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button2C1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button2B2.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Páginas web" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%208.htm">
+				<img style="border: 0" id="img7" src="button2D3.jpg" height="35" width="150" alt="Navegadores" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button2E4.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button2D3.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button2F4.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button2E4.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Navegadores" --></a></td>
+			</tr>
+			<tr>
+				<td class="style21" style="width: 157px">
+				<a href="pagina%209.htm">
+				<img style="border: 0" id="img8" src="button172.jpg" height="35" width="150" alt="Privacidad y seguridad" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'button165.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'button172.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'button166.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'button165.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Privacidad y seguridad" --></a></td>
+			</tr>
+			<tr>
+				<td class="style29" style="width: 157px; height: 13px;">
+				<a href="pagina%2010.htm">
+				<img style="border: 0" id="img9" src="button173.jpg" height="35" width="150" alt="Tarjetas red y módem" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'button167.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'button173.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'button168.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'button167.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Tarjetas red y módem" --></a></td>
+			</tr>
+			<tr>
+				<td class="style29" style="width: 157px; height: 13px;">
+				<a href="prueba.htm">
+				</a>
+				<img style="border: 0" id="img11" src="button174.jpg" height="35" width="150" alt="trabajo de word" onmouseover="FP_swapImg(1,0,/*id*/'img11',/*url*/'button3A3.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img11',/*url*/'button174.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img11',/*url*/'button3B3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img11',/*url*/'button3A3.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Embossed Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="trabajo de word" --></td>
+			</tr>
+		</table>
+</td>
+
+<td class="style24" valign="top">
+<table style="width:200px;">
+<tr>
+<td class="style5" valign="top">
+<img src="Como-ser-hacker-y-que-estudios-se-necesitan1.jpg" width="950" height="390" align="top" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== FILA FIJA PARA FECHA Y VISITAS ===== -->
+<tr>
+<td colspan="2" class="style5" valign="top">
+	<div id="infoInferior">
+		<div id="contadorVisitas">Visitas: 0</div>
+		<div id="fechaHora">00/00/0000 00:00:00</div>
+	</div>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menú</title>
+
+<style type="text/css">
+/* Estilo base */
+body {
+  background-color: #000000;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.style1 { margin-left: 0px; }
+.style3 { border-color: #99CCFF; border-width: 0; }
+.style4 { font-size: large; text-align: left; }
+.style5 { text-align: center; }
+.style17 { text-align: left; }
+.style20 { border-style: solid; border-color: #000000; background-color: #000000; }
+.style24 { text-align: justify; }
+
+/* Estilo menú desplegable */
+#menu-container {
+  width: 180px;
+  position: relative;
+}
+
+#menu-button {
+  width: 150px;
+  height: 35px;
+  background-color: #0099CC;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 180px;
+  background-color: #000000;
+  border: 1px solid #0099CC;
+}
+
+#menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#menu a:hover {
+  background-color: #0099CC;
+}
+
+#menu-container:hover #menu {
+  display: block;
+}
+
+/* Estilo para la sección de visitas y fecha */
+#infoInferior {
+  width: 320px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#contadorVisitas, #fechaHora {
+  color: #0099CC;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+</style>
+
+<script type="text/javascript">
+/* ===== CONTADOR DE VISITAS ===== */
+function contarVisitas() {
+  var visitas = localStorage.getItem("visitas");
+  if (visitas === null) {
+    visitas = 1;
+  } else {
+    visitas = parseInt(visitas) + 1;
+  }
+  localStorage.setItem("visitas", visitas);
+  document.getElementById("contadorVisitas").innerHTML = "Visitas: " + visitas;
+}
+
+/* ===== ACTUALIZAR FECHA Y HORA ===== */
+function actualizarFechaHora() {
+  var ahora = new Date();
+  var dia = ("0" + ahora.getDate()).slice(-2);
+  var mes = ("0" + (ahora.getMonth() + 1)).slice(-2);
+  var anio = ahora.getFullYear();
+  var hora = ("0" + ahora.getHours()).slice(-2);
+  var min = ("0" + ahora.getMinutes()).slice(-2);
+  var seg = ("0" + ahora.getSeconds()).slice(-2);
+
+  document.getElementById("fechaHora").innerHTML =
+    dia + "/" + mes + "/" + anio + " " + hora + ":" + min + ":" + seg;
+}
+
+setInterval(actualizarFechaHora, 1000);
+</script>
+</head>
+
+<body onload="contarVisitas(); actualizarFechaHora()">
+
+<table style="width:1200px;height:800px;" class="style3" align="center">
+
+  <!-- Cabecera -->
+  <tr>
+    <td colspan="2" class="style17" valign="top" style="height: 193px">
+      <img src="img14.jpg" class="style1" width="1150" height="200" align="top" />
+    </td>
+  </tr>
+
+  <tr>
+    <!-- Menú izquierdo -->
+    <td class="style20" valign="top" style="width:146px;">
+      <div id="menu-container">
+        <!-- Botón que activa el menú -->
+        <button id="menu-button">Menú</button>
+
+        <!-- Menú desplegable -->
+        <div id="menu">
+          <a href="pagina%203.htm">Definición</a>
+          <a href="pagina%202.htm">Historia</a>
+          <a href="pagina%204.htm">Funcionalidades de internet</a>
+          <a href="pagina%207.htm">Tipos de conexión</a>
+          <a href="pagina%206.htm">Protocolos</a>
+          <a href="pagina%205.htm">Páginas web</a>
+          <a href="pagina%208.htm">Navegadores</a>
+          <a href="pagina%209.htm">Privacidad y seguridad</a>
+          <a href="pagina%2010.htm">Tarjetas red y módem</a>
+          <a href="prueba.htm">Trabajo de Word</a>
+        </div>
+      </div>
+    </td>
+
+    <!-- Contenido central -->
+    <td class="style24" valign="top">
+      <table style="width:200px;">
+        <tr>
+          <td class="style5" valign="top">
+            <img src="Como-ser-hacker-y-que-estudios-se-necesitan1.jpg" width="950" height="390" align="top" />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Pie con visitas y fecha -->
+  <tr>
+    <td colspan="2" class="style5" valign="top">
+      <div id="infoInferior">
+        <div id="contadorVisitas">Visitas: 0</div>
+        <div id="fechaHora">00/00/0000 00:00:00</div>
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
+

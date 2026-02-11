@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sin título 1</title>
+
+<style type="text/css">
+.style3 { border-color: #99CCFF; border-width: 0; }
+.style4 { font-size: large; text-align: left; }
+.style5 { text-align: center; }
+.style7 { border: 1px solid #000000; background-color: #000000; }
+.style17 { text-align: left; }
+.style18 { border-style: solid; border-color: #000000; text-align: center; background-color: #000000; }
+.style20 { border-style: solid; border-color: #000000; background-color: #000000; }
+.style21 { border-style: solid; border-color: #000000; text-align: center; }
+.style23 { color: #0099CC; }
+.style24 { text-align: justify; }
+
+/* ---- CONTADOR Y FECHA ---- */
+#contadorVisitas {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	color: #0099CC;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+
+#fechaHora {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	color: #0099CC;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+</style>
+
+<script type="text/javascript">
+function FP_swapImg() {
+ var doc=document,args=arguments,elm,n;
+ doc.$imgSwaps=new Array();
+ for(n=2; n<args.length; n+=2) {
+  elm=document.getElementById(args[n]);
+  if(elm) {
+   doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+   elm.$src=elm.src;
+   elm.src=args[n+1];
+  }
+ }
+}
+
+function FP_preloadImgs() {
+ var d=document,a=arguments;
+ if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) {
+  d.FP_imgs[i]=new Image;
+  d.FP_imgs[i].src=a[i];
+ }
+}
+
+/* ---- CONTADOR ---- */
+function contarVisitas() {
+ var visitas = localStorage.getItem("visitas");
+ if (visitas === null) {
+  visitas = 1;
+ } else {
+  visitas = parseInt(visitas) + 1;
+ }
+ localStorage.setItem("visitas", visitas);
+ document.getElementById("contadorVisitas").innerHTML = "Visitas: " + visitas;
+}
+
+/* ---- FECHA Y HORA ---- */
+function actualizarFechaHora() {
+ var ahora = new Date();
+ var dia = ("0" + ahora.getDate()).slice(-2);
+ var mes = ("0" + (ahora.getMonth()+1)).slice(-2);
+ var anio = ahora.getFullYear();
+ var hora = ("0" + ahora.getHours()).slice(-2);
+ var min = ("0" + ahora.getMinutes()).slice(-2);
+ var seg = ("0" + ahora.getSeconds()).slice(-2);
+
+ document.getElementById("fechaHora").innerHTML =
+  dia + "/" + mes + "/" + anio + " " + hora + ":" + min + ":" + seg;
+}
+
+setInterval(actualizarFechaHora, 1000);
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+</script>
+
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button22.jpg',/*url*/'button23.jpg',/*url*/'button2E2.jpg',/*url*/'button2F2.jpg',/*url*/'button90.jpg',/*url*/'button91.jpg',/*url*/'button92.jpg',/*url*/'button93.jpg',/*url*/'button94.jpg',/*url*/'button95.jpg',/*url*/'button3A1.jpg',/*url*/'button3B1.jpg',/*url*/'button3D1.jpg',/*url*/'button3E1.jpg',/*url*/'button96.jpg',/*url*/'button97.jpg',/*url*/'button98.jpg',/*url*/'button99.jpg',/*url*/'button33.jpg',/*url*/'button32.jpg',/*url*/'button36.jpg',/*url*/'button35.jpg',/*url*/'button39.jpg',/*url*/'button38.jpg'); contarVisitas(); actualizarFechaHora()"
+style="background-color:#000000;">
+
+<table style="width:1200px;height:800px;" class="style3" align="center">
+<tr>
+<td colspan="2" class="style17">
+<img src="img14.jpg" width="1150" height="200" />
+</td>
+</tr>
+
+<tr>
+<td class="style20" valign="top" style="width:146px;">
+<!-- MENÚ (SIN CAMBIOS) -->
+		<table style="width: 180px" cellspacing="4" class="style7">
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%203.htm">
+				<img style="border: 0" id="img1" src="button24.jpg" height="35" width="150" alt="Definición" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button22.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button24.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button23.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button22.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Definición" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%202.htm">
+				<img style="border: 0" id="img2" src="button2D1.jpg" height="35" width="150" alt="Historia" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button2E2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button2D1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button2F2.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button2E2.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Historia" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%204.htm">
+				<img style="border: 0" id="img3" src="button100.jpg" height="35" width="150" alt="Funcionalidades de internet" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button90.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button100.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button91.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button90.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-justify-horiz: 0; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Funcionalidades de internet" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%207.htm">
+				<img style="border: 0" id="img4" src="button101.jpg" height="35" width="150" alt="Tipos de conexión" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button92.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button101.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button93.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button92.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Tipos de conexión" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%206.htm">
+				<img style="border: 0" id="img5" src="button102.jpg" height="35" width="150" alt="Protocolos" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button94.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button102.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button95.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button94.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Protocolos" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%205.htm">
+				<img style="border: 0" id="img6" src="button103.jpg" height="35" width="150" alt="Páginas web" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button3A1.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button103.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button3B1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button3A1.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Páginas web" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%208.htm">
+				<img style="border: 0" id="img7" src="button3C1.jpg" height="35" width="150" alt="Navegadores" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button3D1.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button3C1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button3E1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button3D1.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Navegadores" --></a></td>
+			</tr>
+			<tr>
+				<td class="style21" style="width: 157px">
+				<a href="pagina%209.htm">
+				<img style="border: 0" id="img8" src="button3F1.jpg" height="35" width="150" alt="Privacidad y seguridad" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'button96.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'button3F1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'button97.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'button96.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Privacidad y seguridad" --></a></td>
+			</tr>
+			<tr>
+				<td class="style18" style="width: 157px">
+				<a href="pagina%2010.htm">
+				<img style="border: 0" id="img9" src="button104.jpg" height="35" width="150" alt="Tarjetas red y módem" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'button98.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'button104.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'button99.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'button98.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glass Capsule 1; fp-bgcolor: #000000; fp-proportional: 0" fp-title="Tarjetas red y módem" --></a></td>
+			</tr>
+		</table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td class="style24" valign="top">
+<table style="width:200px;">
+<tr>
+<td class="style4">
+<em><strong>“El conocimiento nunca estuvo tan <span class="style23">Una conexión puede cambiar tu vida.”</span></strong></em>
+</td>
+</tr>
+<tr>
+<td class="style5">
+<img src="Como-ser-hacker-y-que-estudios-se-necesitan1.jpg" width="950" height="390" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- CONTADOR Y FECHA -->
+<div id="contadorVisitas"></div>
+<div id="fechaHora"></div>
+
+</body>
+</html>
